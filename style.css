@@ -1,0 +1,251 @@
+/* Log In */
+.input-container {
+   position: relative;
+   margin-top: 30px;
+}
+.input-container i {
+   position: absolute;
+   left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+input[type="text"],
+input[type="password"] {
+   padding-left: 30px;
+}
+button {
+       margin-top: 50px;
+       width: 100%;
+       background-color: #ffffff;
+       color: #080710;
+       padding: 10px;
+       font-size: 18px;
+       font-weight: 600;
+       border-radius: none;
+       cursor: pointer;
+       display: block;
+       margin: auto; 
+   }
+ *,
+*:before,
+*:after{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+background-color: #080710;
+}
+.background{
+width: 400px;
+height: 400px;
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+}
+.background .shape{
+height: 200px;
+width: 200px;
+position: absolute;
+border-radius: 50%;
+}
+.shape:first-child{
+background: linear-gradient(
+   #1845ad,
+   #23a2f6
+);
+left: -80px;
+top: -80px;
+}
+.shape:last-child{
+background: linear-gradient(
+   to right,
+   #ff512f,
+   #f09819
+);
+right: -30px;
+bottom: -80px;
+}
+form{
+height: 400px;
+width: 400px;
+background-color: rgba(255,255,255,0.13);
+position: absolute;
+transform: translate(-50%,-50%);
+top: 50%;
+left: 50%;
+border-radius: 10px;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+padding: 50px 35px;
+}
+form *{
+font-family: 'Poppins',sans-serif;
+color: #ffffff;
+letter-spacing: 0.5px;
+outline: none;
+border: none;
+}
+form h3{
+font-size: 32px;
+font-weight: 500;
+line-height: 42px;
+text-align: center;
+margin-bottom: 30px;
+}
+   .login-container {
+       text-align: center; 
+   }
+label{
+display: block;
+margin-top: 30px;
+font-size: 16px;
+font-weight: 500;
+}
+input{
+display: block;
+height: 50px;
+width: 100%;
+background-color: rgba(255,255,255,0.07);
+border-radius: 3px;
+padding: 0 10px;
+margin-top: 8px;
+font-size: 14px;
+font-weight: 300;
+}
+::placeholder{
+color: #e5e5e5;
+}
+button{
+margin-top: 30px;
+width: 50%;
+background-color: #82888f;
+color: #080710;
+padding: 10px;
+font-size: 18px;
+font-weight: 600;
+border-radius: 5px;
+cursor: pointer;
+}
+.social{
+margin-top: auto;
+display: block;
+}
+.social div{
+background: red;
+width: 150px;
+border-radius: 3px;
+padding: 5px 10px 10px 5px;
+background-color: rgba(255,255,255,0.27);
+color: #eaf0fb;
+text-align: center;
+}
+.social div:hover{
+background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+margin-left: 25px;
+}
+.social i{
+margin-right: 4px;
+}
+
+/* Dashboard */
+
+body.dashboard {
+   background: #fff;
+}
+.topbar {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 0;
+   width: 89%;
+   height: 92px;
+   position: fixed;
+   top: 0;
+   left: 225px;
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.topbar h1 {
+   margin: 0 auto 0 0;
+   margin-right: 20px;
+}
+.out-button {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   z-index: 1002;
+   color: #fafafa;
+   background-color: #d92323;
+   border-color: #d92323;
+   width: 100px;
+   padding: 5px;
+   border-radius: 5px;
+   margin-right: 1000px;
+}
+.dashboard-container h2 {
+text-align: center;
+}
+.dashboard-container h2 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+.sidebar-display{
+   background: rgb(5, 68, 104);
+   color: #fff;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 225px;
+   height: 100%;
+   z-index: 1;
+}
+.sidebar-button:hover {
+   background-color: #555;
+}
+.sidebar-display ul li a{
+   display: flex;
+   padding: 15px 5px;
+   padding-left: 10px;
+   border-bottom: 1px solid #10558d;
+   color: #fff;
+   font-size: 16px;
+   text-decoration: none;
+}
+ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+.main-body {
+   position: relative;
+   top: 100px;
+   padding: 20px;
+   margin-left: 225px;
+   z-index: 2;
+   text-align: center;
+   background-color: #fff;
+}
+.footer {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   width: 85%;
+   height: 30px;
+   position: fixed;
+   bottom: 0;
+   left: 225px;
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer h5 {
+   margin: 0;
+   margin-right: 20px;
+}
