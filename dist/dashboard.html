@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title> My Dashboard </title>
+    <title>Dashboard</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel = "stylesheet" type="text/css" href="output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="dashboard">
-    <div class="dashboard-container">
-        <div class="topbar">
-            <h1>My Dashboard</h1>
-            <div class="button">
-                <a href="login.html">
-                    <button class="out-button" type="button"> Log Out! </button>
-                </a>
-            </div>
+<body class="bg-white-200">
+    <div class="dashboard-header bg-yellow-400 text-black py-4">
+        <h2 class="text-center font-bold text-white text-5xl">My Dashboard</h2>
+        <h2 class="text-xl text-center font-black mt-"></h2>
+        <a href="login.html">
+        <div class="flex justify-between items-center px-4">
+          
+            <a href="login.html">
+                <button class="out-button bg-red-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Log Out</button>
+            </a>
         </div>
-        <div class="sidebar-display">
-            <h2>Dashboard</h2>
-            <ul>
-                <li><a href="#Home" class="sidebar-button">Home</a></li>
-                <li><a href="#Analytics" class="sidebar-button">Analytics</a></li>
-                <li><a href="#Reports" class="sidebar-button">Reports</a></li>
-                <li><a href="#Settings" class="sidebar-button">Settings</a></li>
-            </ul>
+    </div>
+    <div class="sidebar-display bg-yellow-400 text-white-800 py-4 px-2 fixed top-0 left-0 h-full w-40">
+        <h2 class="text-2xl text-center font-bold text-white border-black-500 ">  Dashboard</h2>
+        <ul class="mt-4">
+            <li><a href="#Home" class="text-white text-bold sidebar-button block py-6 px-9 border-b border-black-500">Home</a></li>
+            <li><a href="#Analytics" class=" text-white text-bold sidebar-button block py-6 px-9 border-b border-black-500">Analytics</a></li>
+            <li><a href="#Reports" class=" text-white text-bold sidebar-button block py-6 px-9 border-b border-black-500">Reports</a></li>
+            <li><a href="#Settings" class=" text-white text-bold sidebar-button block py-6 px-9 border-b border-black-500">Settings</a></li>
+        </ul>
+    </div>
+    <div class="main-body ml-100 mt-200 px-40 text-center">
+        <div class="flex flex-col items-center">
+            <h1 class="mt-80 text-4xl">Welcome Elena, Mabuhay^^!</h1>
+           
+            <i class="mt-8 text-lg">Welcome to the Dashboard!</i>
         </div>
-        <div class="main-body">
-            <h2>WELCOME, Ronalyn!!</h2>
-            <p>Welcome to the dashboard! This is the main content area where you can display various information and charts.</p>
-        </div>
-        <div class="footer">
-            <h5>&copy; 2024 Dashboard. All rights reserved.</h5>
+    </div>
+    <div class="footer bg-yellow-400 text-gray-900 py-2 px-4 fixed bottom-0 left-0 w-full flex justify-center items-center">
+        <h5 class = "mt - 9  text-2xl text-white text-bold ">&copy; Dashboard. All rights reserved.</h5>
+
     </div>
 </body>
+
+</html>
